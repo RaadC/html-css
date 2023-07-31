@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="contact-form" action="#" method="post">
+      <h1>CONTACT US</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <label for="email">Email:</label>
+      <input type="text" id="email" />
+      <label for="message">Message:</label>
+      <textarea id="message" cols="30" rows="10"></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+    <form class="login-form" action="#" method="post">
+      <h1>LOG IN</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="username" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" />
+      <button type="submit">LOGIN</button>
+    </form>
+    <form class="survey-form" action="#" method="post">
+      <h1>SURVEY</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <label for="age">Age:</label>
+      <input type="text" id="age" />
+      <label>Sex:</label>
+      <div class="radio">
+        <input type="radio" id="male" name="sex" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="sex" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <label>Programming Language that you know:</label>
+      <div class="checkbox">
+        <div class="checkbox-item">
+          <input type="checkbox" id="java" name="prog" />
+          <label for="java">Java</label>
+        </div>
+
+        <div class="checkbox-item">
+          <input type="checkbox" id="javascript" name="prog" />
+          <label for="javascript">JavaScript</label>
+        </div>
+
+        <div class="checkbox-item">
+          <input type="checkbox" id="python" name="prog" />
+          <label for="python">Python</label>
+        </div>
+
+        <div class="checkbox-item">
+          <input type="checkbox" id="c#" name="prog" />
+          <label for="c#">c#</label>
+        </div>
+      </div>
+      <button type="submit">LOGIN</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(219, 223, 227);
+  font-family: monospace;
+  color: black;
+}
+.contact-form,
+.login-form,
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact-form input,
+.contact-form textarea,
+.login-form input,
+.survey-form input[type="text"] {
+  width: 70%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: monospace;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.login-form input:focus,
+.survey-form input[type="text"]:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+button[type="submit"] {
+  width: 100px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.login-form {
+  width: 30%; /* over writes earlier mentioned width*/
+}
+.survey-form input[id="age"] {
+  width: 30px; /* over writes earlier mentioned width for input*/
+}
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #4caf50;
+}
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+@media screen and (max-width: 840px) {
+  .contact-form,
+  .survey-form {
+    width: 70%;
+  }
+  .login-form {
+    width: 50%;
+  }
+}

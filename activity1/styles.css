@@ -1,46 +1,46 @@
-body{
-    background-color: rgb(219, 223, 227);
-    font-family: monospace;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: black;
+body {
+  background-color: rgb(219, 223, 227);
+  font-family: monospace;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
 }
-h1{
-    font-size: 2.5em;
+h1 {
+  font-size: 2.5em;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
-.list-container{
-    display: flex;
-    gap: 80px;
+.list-container {
+  display: flex;
+  gap: 80px;
 }
-.list-label{
-    font-weight: bold;
-    font-size: 1.2em;
+.list-label {
+  font-weight: bold;
+  font-size: 1.2em;
 }
-.image-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 100%;
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
 }
-.image-container img{
-    max-width: 100%;
+.image-container img {
+  max-width: 100%;
 }
-.table-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+.table-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
-table{
-    border-collapse: collapse;
-    width: 380px;
+table {
+  border-collapse: collapse;
+  width: 380px;
 }
 th:nth-child(1),
 td:nth-child(1) {
@@ -66,16 +66,17 @@ td:nth-child(4) {
   text-align: center;
   color: red;
 }
-th{
-    font-weight: bold;
+th {
+  font-weight: bold;
 }
-th, td {
-    border: 1px solid black;
-    padding: 8px;
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
 }
-@media screen and (max-width: 840px){
-    .list-container{
-        flex-direction: column;
-        gap: 5px;
-    }
+@media screen and (max-width: 840px) {
+  .list-container {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
